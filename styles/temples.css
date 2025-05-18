@@ -1,0 +1,65 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+}
+
+header {
+    background-color: #004d99;
+    color: white;
+    padding: 1rem;
+    position: relative;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    background: #003366;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    border-top: 1px solid #555;
+}
+
+nav a:hover {
+    background-color: #0059b3;
+}
+
+#menu {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+figure {
+    background: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #004d99;
+    color: white;
+}
