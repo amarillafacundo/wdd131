@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Argentina</title>
+  <link rel="stylesheet" href="styles/place.css" />
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Argentina</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Discover</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+        <picture>
+            <source srcset="images/argentina-hero-large.webp" media="(min-width: 768px)">
+            <img src="images/argentina-hero-small.webp" alt="Snowy peaks in Patagonia, Argentina">
+        </picture>
+    </section>
+
+    <section class="information">
+      <h2>About Argentina</h2>
+      <p>
+        Argentina, located in South America, is known for its diverse geography—ranging from the Andes mountains and Patagonia to vast pampas grasslands and vibrant cities like Buenos Aires. It's famous for tango, soccer, wine, and incredible natural wonders like Iguazú Falls.
+      </p>
+    </section>
+
+    <section class="weather">
+      <h2>Weather <span class="weather-icon"></span></h2>
+      <p>Temperature: <span id="temp">10</span>°C</p>
+      <p>Wind Speed: <span id="speed">12</span> km/h</p>
+      <p>Wind Chill: <span id="chill">Calculating...</span></p>
+      <img class="weather-svg" src="images/weather-icon.svg" alt="Weather icon" />
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Amarilla Facundo - Argentina</p>
+    <p>Last modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
