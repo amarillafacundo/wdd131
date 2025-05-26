@@ -5,7 +5,7 @@
     --accent-color: #F6B40E;
     /* Sun Yellow */
     --bg-color: #ffffff;
-    --text-color: #222;
+    --text-color: #000;
     --heading-font: 'Segoe UI', sans-serif;
     --body-font: 'Arial', sans-serif;
 }
@@ -27,7 +27,7 @@ body {
 
 header {
     background-color: var(--primary-color);
-    color: white;
+    color: #000;
     padding: 1rem;
     text-align: center;
 }
@@ -41,7 +41,7 @@ nav ul {
 }
 
 nav a {
-    color: white;
+    color:#000;
     text-decoration: none;
     font-weight: bold;
 }
@@ -57,11 +57,13 @@ nav a {
 
 /* === Information Section === */
 .information {
+    background-color: #f0f0f0;
     margin: 1rem 0;
 }
 
 .information h2 {
-    color: var(--primary-color);
+    background-color: #f0f0f0;
+    color: #000;
     font-family: var(--heading-font);
     margin-bottom: 0.5rem;
 }
@@ -78,7 +80,7 @@ nav a {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    color: var(--primary-color);
+    color: #000;
 }
 
 .weather .weather-icon::after {
@@ -100,7 +102,7 @@ footer {
     font-size: 0.9rem;
     padding: 1rem;
     background-color: var(--primary-color);
-    color: white;
+    color: #000;
 }
 
 /* === Responsive Design === */
