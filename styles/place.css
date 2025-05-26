@@ -6,8 +6,8 @@
     /* Sun Yellow */
     --bg-color: #ffffff;
     --text-color: #000;
-    --heading-font: 'Segoe UI', sans-serif;
-    --body-font: 'Arial', sans-serif;
+    --heading-font: 'Montserrat', sans-serif;
+    --body-font: 'Montserrat', sans-serif;
 }
 
 /* === Base Styling === */
@@ -59,13 +59,16 @@ nav a {
 .information {
     background-color: #f0f0f0;
     margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    /* Optional, for a modern feel */
 }
 
 .information h2 {
     background-color: #f0f0f0;
     color: #000;
     font-family: var(--heading-font);
-    margin-bottom: 0.5rem;
+    margin: 1rem 0 0.5rem;
 }
 
 /* === Weather Section === */
