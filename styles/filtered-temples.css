@@ -74,10 +74,12 @@ figure {
 
 
 figure img {
+    display: block;
+    margin: 0 auto;
     transition: transform 0.3s ease;
     width: 100%;
     height: auto;
-}
+    border-radius: 6px; }
 
 figure:hover img {
     transform: scale(1.05);
