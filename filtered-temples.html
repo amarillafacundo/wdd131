@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Amarilla Facundo">
+    <meta name="description" content="A responsive web page showing a personal temple album with images and captions.">
+    <title>Temple Album</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wdth,wght@100,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu">&#9776;</button>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Temple Album</h1>
+        <h2>Gallery of Temples of The Church of Jesus Christ of Latter-day Saints</h2>
+        <div id="templeCards" class="grid-container"></div>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> | Santa Fe, Argentina</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/filtered-temples.js" defer></script>
+</body>
+
+</html>

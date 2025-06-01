@@ -1,0 +1,90 @@
+/* 🌟 CSS Variables */
+:root {
+    --primary-color: #004d99;
+    --secondary-color: #003366;
+    --hover-color: #0059b3;
+    --text-color: white;
+    --background-color: #f0f0f0;
+    --font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background: var(--background-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 1rem;
+    position: relative;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    background: var(--secondary-color);
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 1rem;
+    border-top: 1px solid #555;
+}
+
+nav a:hover {
+    background-color: var(--hover-color);
+}
+
+#menu {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+
+figure {
+    background: white;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+
+figure img {
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: auto;
+}
+
+figure:hover img {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
