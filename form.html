@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Amarilla Facundo">
+    <meta name="description" content="">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
+    <script defer src="js/form.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html">
+            <!-- Product Select -->
+            <label for="productName">Product Name</label>
+            <select id="productName" name="productName" required>
+                <option value="" disabled selected>Select a Product...</option>
+                <!-- Options inserted by JS -->
+            </select>
+
+            <!-- Rating -->
+            <fieldset>
+                <legend>Overall Rating</legend>
+                <div class="stars">
+                    <label><input type="radio" name="rating" value="1" required> &#9733;</label>
+                    <label><input type="radio" name="rating" value="2"> &#9733;&#9733;</label>
+                    <label><input type="radio" name="rating" value="3"> &#9733;&#9733;&#9733;</label>
+                    <label><input type="radio" name="rating" value="4"> &#9733;&#9733;&#9733;&#9733;</label>
+                    <label><input type="radio" name="rating" value="5"> &#9733;&#9733;&#9733;&#9733;&#9733;</label>
+                </div>
+            </fieldset>
+
+            <!-- Date -->
+            <label for="installDate">Date of Installation</label>
+            <input type="date" id="installDate" name="installDate" required>
+
+            <!-- Features -->
+            <fieldset>
+                <legend>Useful Features (check all that apply)</legend>
+                <label><input type="checkbox" name="features" value="durable"> Durable</label>
+                <label><input type="checkbox" name="features" value="easy_use"> Easy to Use</label>
+                <label><input type="checkbox" name="features" value="energy_efficient"> Energy Efficient</label>
+                <label><input type="checkbox" name="features" value="portable"> Portable</label>
+            </fieldset>
+
+            <!-- Review -->
+            <label for="review">Written Review (optional)</label>
+            <textarea id="review" name="review" rows="4" placeholder="Write your thoughts..."></textarea>
+
+            <!-- Name -->
+            <label for="username">Your name (optional)</label>
+            <input type="text" id="username" name="username" placeholder="John Doe">
+
+            <!-- Submit -->
+            <input type="submit" value="Submit Review">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 | WDD 131 | Amarilla Facundo</p>
+    </footer>
+</body>
+
+</html>

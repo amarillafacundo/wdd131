@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Amarilla Facundo">
+    <title>Review Submitted</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            let count = localStorage.getItem("reviewCount");
+            count = count ? parseInt(count) + 1 : 1;
+            localStorage.setItem("reviewCount", count);
+            document.getElementById("review-count").textContent = count;
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Thank You!</h1>
+    </header>
+
+    <main>
+        <p>Your review has been submitted successfully.</p>
+        <p>You have submitted <strong id="review-count">0</strong> review(s).</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 | WDD 131 | Amarilla Facundo</p>
+    </footer>
+</body>
+
+</html>
