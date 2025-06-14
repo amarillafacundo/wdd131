@@ -5,11 +5,27 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     background-color: #F8F7FD;
     color: #1C2F4A;
     line-height: 1.6;
+
+    /* Added for sticky footer */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Make main take all available space */
+main {
+    flex: 1;
 }
 
 /* Header */
@@ -18,14 +34,19 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #fff;
+    background-color: #1C2F4A;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-.logo {
+.home-link {
     font-weight: 600;
-    font-size: 1.5rem;
-    color: #1C2F4A;
+    font-size: 1.2rem;
+    color: #F8F7FD;
+    text-decoration: none;
+}
+
+.home-link:hover {
+    color: #B5B5BA;
 }
 
 nav ul {
@@ -36,7 +57,7 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: #1C2F4A;
+    color: #F8F7FD;
     font-weight: 500;
     transition: color 0.3s ease;
 }
@@ -82,7 +103,7 @@ nav a:hover {
 
 .hero-text h2 {
     font-size: 1.2rem;
-    color: #B5B5BA;
+    color: #1C2F4A;
     margin-bottom: 0.5rem;
 }
 
@@ -118,7 +139,7 @@ nav a:hover {
 footer {
     text-align: center;
     padding: 2rem 1rem;
-    color: #B5B5BA;
+    color: #1C2F4A;
     font-size: 0.9rem;
 }
 
