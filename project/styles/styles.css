@@ -1,10 +1,14 @@
-/* ==== Desktop Styles ==== */
-
-/* Reset */
+/* Reset básicos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
 }
 
 body {
@@ -21,17 +25,25 @@ main {
     flex: 1;
 }
 
+/* Header (navegación) */
 header {
-    background-color: #1C2F4A;
-    padding: 1rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #1C2F4A;
 }
+
+.home-link {
+    color: #F8F7FD;
+    font-weight: 600;
+    text-decoration: none; }
 
 nav ul {
     display: flex;
     gap: 2rem;
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav a {
@@ -49,14 +61,15 @@ nav a:hover {
 .hero {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
     justify-content: center;
-    gap: 2rem;
+    align-items: center;
     padding: 4rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
+    gap: 2rem;
 }
 
+/* Imagen a la izquierda */
 .hero-image {
     flex: 1;
     display: flex;
@@ -69,9 +82,9 @@ nav a:hover {
     border-radius: 0;
 }
 
+/* Texto a la derecha */
 .hero-text {
     flex: 1;
-    max-width: 500px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -104,16 +117,19 @@ nav a:hover {
     border: none;
     cursor: pointer;
     margin-top: 1rem;
-    align-self: flex-start;
+    align-items: flex-start
 }
+
 
 .btn:hover {
     background-color: #B5B5BA;
     color: #1C2F4A;
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 2rem 1rem;
     color: #1C2F4A;
-    font-size: 0.9rem; }
+    font-size: 0.9rem;
+}
