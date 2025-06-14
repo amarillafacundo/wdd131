@@ -16,14 +16,11 @@ body {
     background-color: #F8F7FD;
     color: #1C2F4A;
     line-height: 1.6;
-
-    /* Added for sticky footer */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-/* Make main take all available space */
 main {
     flex: 1;
 }
@@ -31,28 +28,19 @@ main {
 /* Header */
 header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
+    justify-content: center;
+    padding: 1rem;
     background-color: #1C2F4A;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-.home-link {
-    font-weight: 600;
-    font-size: 1.2rem;
-    color: #F8F7FD;
-    text-decoration: none;
-}
-
-.home-link:hover {
-    color: #B5B5BA;
 }
 
 nav ul {
     display: flex;
-    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav a {
@@ -69,35 +57,15 @@ nav a:hover {
 /* Hero Section */
 .hero {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    padding: 4rem 2rem;
-}
-
-.hero-image {
-    order: 0;
-    flex: 0 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero-image img {
-    width: 280px;
-    height: auto;
-    border-radius: 0;
-    margin: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .hero-text {
-    order: 1;
-    flex: 0 0 auto;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    width: 100%;
     text-align: left;
 }
 
@@ -117,6 +85,20 @@ nav a:hover {
     font-size: 1rem;
 }
 
+.hero-image {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 0 1rem 0;
+}
+
+.hero-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 0;
+}
+
 .btn {
     background-color: #1C2F4A;
     color: #fff;
@@ -124,10 +106,11 @@ nav a:hover {
     text-decoration: none;
     font-weight: 500;
     border-radius: 4px;
-    display: inline-block;
-    margin-top: 1rem;
-    border: none;
+    border: 1px solid #1C2F4A;
     cursor: pointer;
+    margin: 0;
+    display: inline-block;
+    align-self: flex-start;
 }
 
 .btn:hover {
@@ -141,31 +124,4 @@ footer {
     padding: 2rem 1rem;
     color: #1C2F4A;
     font-size: 0.9rem;
-}
-
-/* Responsive */
-@media (max-width: 767px) {
-    .hero {
-        flex-direction: column-reverse;
-        align-items: center;
-        text-align: center;
-        padding: 2rem;
-    }
-
-    .hero-text {
-        padding: 0;
-        max-width: 600px;
-        align-items: center;
-        text-align: center;
-    }
-
-    .hero-image {
-        margin-top: 2rem;
-        justify-content: center;
-    }
-
-    .hero-image img {
-        width: 220px;
-        border-radius: 50%;
-    }
 }
