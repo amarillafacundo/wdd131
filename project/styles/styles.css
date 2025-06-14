@@ -51,20 +51,20 @@ nav a:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     padding: 4rem 2rem;
 }
 
 .hero-image {
     order: 0;
-    /* Ensure image stays on the left */
-    flex: 1;
+    flex: 0 0 auto;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-image img {
-    width: 300px;
+    width: 280px;
     height: auto;
     border-radius: 0;
     margin: 0;
@@ -72,8 +72,7 @@ nav a:hover {
 
 .hero-text {
     order: 1;
-    /* Text appears to the right */
-    flex: 1;
+    flex: 0 0 auto;
     max-width: 500px;
     display: flex;
     flex-direction: column;
