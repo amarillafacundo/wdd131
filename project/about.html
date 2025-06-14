@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about Facundo Amarilla, a web developer based in Argentina.">
+    <title>About | Facundo Amarilla</title>
+
+    <!-- Fonts and Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles-desktop.css">
+    <link rel="stylesheet" href="styles/styles-mobile.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-left"><a href="index.html">Home</a></div>
+        <div class="header-right">
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="about">
+            <h2>About Me</h2>
+            <p>
+                I'm Facundo Amarilla, an aspiring web developer passionate about creating responsive and user-friendly websites. My journey in web development started with HTML, CSS, and JavaScript, and I'm constantly learning to improve my skills.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Facundo Amarilla</p>
+        <p>&copy; <span id="year"></span> | Santa Fe, Argentina</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = document.lastModified;
+    </script>
+</body>
+
+</html>
