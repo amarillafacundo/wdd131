@@ -1,0 +1,332 @@
+/* Reset básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F8F7FD;
+    color: #1C2F4A;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* Header (navegación) - Estilos para ESCRITORIO (por defecto) */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #1C2F4A;
+}
+
+.home-link {
+    color: #F8F7FD;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #F8F7FD;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #B5B5BA;
+}
+
+/* Hero Section - Estilos para ESCRITORIO (por defecto) */
+.hero {
+    display: flex;
+    flex-direction: row;
+    /* Texto e imagen en fila */
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    /* Imagen a la derecha en escritorio */
+}
+
+.hero-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 0;
+}
+
+.hero-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Alinea el texto a la izquierda */
+    text-align: left;
+}
+
+.hero-text h2 {
+    font-size: 1.2rem;
+    color: #1C2F4A;
+    margin-bottom: 0.5rem;
+}
+
+.hero-text h1 {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+
+.hero-text p {
+    margin: 1rem 0;
+    font-size: 1rem;
+}
+
+.btn {
+    background-color: #1C2F4A;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+    /* Espacio debajo del texto en escritorio */
+    align-self: flex-start;
+    /* Para que el botón se alinee con el texto en desktop si es un flex item */
+}
+
+
+.btn:hover {
+    background-color: #B5B5BA;
+    color: #1C2F4A;
+}
+
+/* Footer - Estilos comunes */
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: #1C2F4A;
+    font-size: 0.9rem;
+}
+
+/* Estilos específicos para páginas About y Projects */
+.about,
+.projects {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 2rem auto;
+}
+
+.about h2,
+.projects h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #1C2F4A;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project {
+    background-color: #fff;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project h3 {
+    color: #1C2F4A;
+    margin-bottom: 0.75rem;
+    font-size: 1.4rem;
+}
+
+.project p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    padding: 2rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #1C2F4A;
+    font-size: 2rem;
+}
+
+.contact-form p {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #1C2F4A;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    border-color: #1C2F4A;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(28, 47, 74, 0.2);
+}
+
+.contact-form button[type="submit"] {
+    background-color: #1C2F4A;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #B5B5BA;
+    color: #1C2F4A;
+}
+
+
+/* Media Query para MÓVILES (max-width: 767px) */
+@media (max-width: 767px) {
+    header {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .home-link {
+        /* No se requieren cambios específicos de flexbox aquí */
+    }
+
+    nav {
+        /* No se requieren cambios específicos de flexbox aquí */
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+        white-space: nowrap;
+    }
+
+    /* Ajustes del Hero Section para móvil */
+    .hero {
+        flex-direction: column;
+        /* Apila los elementos verticalmente */
+        align-items: flex-start;
+        /* ¡Alinea todos los elementos (texto, imagen, botón) a la izquierda! */
+        padding: 2rem;
+        max-width: 600px;
+        margin: 0 auto;
+        gap: 1rem;
+        /* Espacio entre los elementos apilados */
+    }
+
+    .hero-text {
+        width: 100%;
+        text-align: left;
+        /* Alinea el texto dentro de hero-text a la izquierda */
+        align-items: flex-start;
+        /* Alinea los elementos internos de hero-text a la izquierda */
+        order: 0;
+        /* Asegura que el texto vaya primero */
+    }
+
+    .hero-image {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        /* ¡Alinea la imagen a la izquierda! */
+        margin-top: 1rem;
+        /* Espacio entre texto y imagen */
+        margin-bottom: 1rem;
+        /* Espacio entre imagen y botón */
+        order: 1;
+        /* La imagen va después del texto */

@@ -1,66 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore the latest web development projects by Facundo Amarilla.">
-  <title>Projects | Facundo Amarilla</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Amarilla Facundo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the latest web development projects by Facundo Amarilla.">
+    <title>Projects | Facundo Amarilla</title>
 
-  <!-- Fonts and Styles -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/styles-desktop.css">
-  <link rel="stylesheet" href="styles/styles-mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+
 </head>
 
 <body>
-  <header>
-    <div class="header-left"><a href="index.html">Home</a></div>
-    <div class="header-right">
-      <nav>
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <header>
+        <a href="index.html" class="home-link">Home</a>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="projects">
+            <h2>My Projects</h2>
+            <div class="project-list">
+                <article class="project">
+                    <h3>Responsive Temple Page</h3>
+                    <p>A mobile-first responsive website showcasing temples with interactive features and image
+                        optimization.</p>
+                </article>
 
-  <main>
-    <section class="projects">
-      <h2>My Projects</h2>
-      <div class="project-list">
-        <article class="project">
-          <h3>Responsive Temple Page</h3>
-          <p>A mobile-first responsive website showcasing temples with interactive features and image optimization.</p>
-        </article>
+                <article class="project">
+                    <h3>JavaScript Quiz App</h3>
+                    <p>A dynamic quiz built with JavaScript, HTML, and CSS that gives instant feedback and tracks the
+                        score.</p>
+                </article>
 
-        <article class="project">
-          <h3>JavaScript Quiz App</h3>
-          <p>A dynamic quiz built with JavaScript, HTML, and CSS that gives instant feedback and tracks the score.</p>
-        </article>
+                <article class="project">
+                    <h3>Grocery Receipt Generator</h3>
+                    <p>Python project that generates a shopping receipt with discounts and future return policy using
+                        datetime functions.</p>
+                </article>
+            </div>
+        </section>
+    </main>
 
-        <article class="project">
-          <h3>Grocery Receipt Generator</h3>
-          <p>Python project that generates a shopping receipt with discounts and future return policy using datetime functions.</p>
-        </article>
-      </div>
-    </section>
-  </main>
+    <footer>
+        <p>&copy; 2025 Facundo Amarilla</p>
+        <p>&copy; <span id="year"></span> | Santa Fe, Argentina</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
 
-  <footer>
-    <p>&copy; 2025 Facundo Amarilla</p>
-    <p>&copy; <span id="year"></span> | Santa Fe, Argentina</p>
-    <p>Last modified: <span id="lastModified"></span></p>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-    document.getElementById("lastModified").textContent = document.lastModified;
-  </script>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = document.lastModified;
+    </script>
 </body>
 
 </html>
